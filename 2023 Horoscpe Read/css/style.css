@@ -1,0 +1,76 @@
+/******************************************
+/* LAYOUT
+/******************************************/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto&family=Source+Sans+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  animation: scroll 70s linear infinite;
+  background: url(https://cdn.wallpapersafari.com/67/5/YWwrAQ.jpeg);
+  color: #eee;
+  min-height: 100vh;
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+@keyframes scroll {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .main {
+    animation: scroll 200s linear infinite;
+  }
+}
+
+@media (min-width: 670px) {
+  .title {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/******************************************/
+.title {
+  font-size: 105px;
+  font-family: 'Cedarville Cursive', 'Lobster', cursive;
+  height: 25%;
+}
+
+.main1,
+.main2 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.main1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.main2 {
+  justify-content: space-around;
+}
+
+button {
+  height: 7%;
+  width: 7%;
+  border-radius: 50%;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+}
